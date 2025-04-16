@@ -5,10 +5,8 @@ def numeros_impar(lista):
     for x in lista:
         if x % 2 == 1:
             lista_impar.append(x)
-    return lista_impar
+    print(lista_impar)
 
-numeros = input("Digite uma lista de números separados por espaço: ")
-
-numeros = list(map(int, numeros.split()))
+numeros = list(map(int, input("Digite uma lista de números separados por espaço: ").split()))
 
 resultado = numeros_impar(numeros)
